@@ -66,9 +66,15 @@ This project requires email credentials to send reports.
     **Important:** The `.env` file is included in `.gitignore` and should never be committed to the repository.
 
 ### 5. Prepare the Sample Data
-The scripts use a sample daily sales file. To generate it:
-1.  Place the Olist e-commerce datasets (`olist_orders_dataset.csv` and `olist_order_payments_dataset.csv`) inside the `notebooks/` directory.
-2.  Run the Jupyter Notebook `notebooks/01-data-preparation.ipynb`. This will create the necessary `daily_sales_...csv` file inside the `data/` directory.
+The scripts in this project are designed to process a daily sales file. To generate the necessary sample data, this project uses the public **[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce )** available on Kaggle.
+
+To create the sample file (`daily_sales_...csv`):
+
+1.  Download the `olist_orders_dataset.csv` and `olist_order_payments_dataset.csv` files from the Kaggle dataset linked above.
+2.  Place these two CSV files inside the `notebooks/` directory of this project.
+3.  Run the Jupyter Notebook `notebooks/01-data-preparation.ipynb`.
+
+This will generate the required sample file inside the `data/` directory, which the main scripts use as input.
 
 ---
 
